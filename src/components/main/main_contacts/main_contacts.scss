@@ -152,8 +152,8 @@
   }
 }
 .main_contacts__map {
-  min-height: 740px;
+  height: 740px;
   @media ($tablet) {
-    min-height: 350px;
+    height: 350px;
   }
 }

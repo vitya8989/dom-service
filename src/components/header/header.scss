@@ -350,5 +350,16 @@
         }
       }
     }
+    &.this--blue {
+      &:hover {
+        @media ($tabletMax) {
+          svg {
+            circle, path {
+              stroke: #66A1AD;
+            }
+          }
+        }
+      }
+    }
   }
 }

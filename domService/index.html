@@ -54,9 +54,9 @@
                             <circle cx="15.8335" cy="15.4999" r="4.66666" stroke="#383838" stroke-width="2"/>
                         </svg>
                     </a>
-                    <a href="#" class="header__link this--icon">
+                    <a href="#" class="header__link this--icon this--blue">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.5 8H1C1.5 21 14 25.8333 16.5 25C18 24.5 15.5 20.5 18 20C20 19.6 23.1667 23.1667 24.5 25H30C30.5 23.5 25 18.5 24 17C26.5 14 29 9.5 29.5 8H24.5C22.6667 10.5 18.7 15.5 17.5 15.5C16.3 15.5 16.6667 10.5 17 8H10.5C13 11 12.5 17.5 11 17C9.8 16.6 6.83333 10.8333 5.5 8Z" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M5.5 8H1C1.5 21 14 25.8333 16.5 25C18 24.5 15.5 20.5 18 20C20 19.6 23.1667 23.1667 24.5 25H30C30.5 23.5 25 18.5 24 17C26.5 14 29 9.5 29.5 8H24.5C22.6667 10.5 18.7 15.5 17.5 15.5C16.3 15.5 16.6667 10.5 17 8H10.5C13 11 12.5 17.5 11 17C9.8 16.6 6.83333 10.8333 5.5 8Z" stroke="#327C8C" stroke-width="2" stroke-linejoin="round"/>
                         </svg>
                     </a>
                     <a href="#" class="header__link this--btn btn this--dark this--lk">Личный кабинет</a>
@@ -67,12 +67,6 @@
 </header>
         <main class="main">
             <div class="preloader">
-    <div class="preloader__content">
-        <div class="preloader__title">Группа управляющих компаний</div>
-        <div class="preloader__img">
-            <img src="./img/preloader/preloader_logo.png" alt="">
-        </div>
-    </div>
 </div>
             <section class="main_top">
     <div class="main_top__content hide">
@@ -150,13 +144,13 @@
         </div>
     </div>
 </section>
-            <section class="main_services section this--dots js-anim-block hide">
+            <section class="main_services section this--dots">
     <div class="dots"></div>
     <div class="container">
         <div class="main_services__content">
-            <h2 class="main_services__title this--wave">Услуги</h2>
+            <h2 class="main_services__title this--wave js-anim-block hide">Услуги</h2>
             <div class="main_services__items">
-                <div class="main_services__item">
+                <div class="main_services__item js-anim-block hide">
                     <div class="main_services__item_img" style="background: url('./img/main/main_services/1.svg') center/contain no-repeat"></div>
                     <div class="main_services__item_info">
                         <h3 class="main_services__item_title">Жилищные</h3>
@@ -168,7 +162,7 @@
                         </svg></a>
                     </div>
                 </div>
-                <div class="main_services__item">
+                <div class="main_services__item js-anim-block hide">
                     <div class="main_services__item_img" style="background: url('./img/main/main_services/2.svg') center/contain no-repeat"></div>
                     <div class="main_services__item_info">
                         <h3 class="main_services__item_title">Коммунальные</h3>
@@ -180,7 +174,7 @@
                         </svg></a>
                     </div>
                 </div>
-                <div class="main_services__item">
+                <div class="main_services__item js-anim-block hide">
                     <div class="main_services__item_img" style="background: url('./img/main/main_services/3.svg') center/contain no-repeat"></div>
                     <div class="main_services__item_info">
                         <h3 class="main_services__item_title">Платные</h3>
@@ -225,7 +219,7 @@
                     </a>
                 </div>
                 <div class="main_news__right">
-                    <a href="#" class="main_news__item">
+                    <a href="#" class="main_news__item js-anim-block hide">
                         <div class="main_news__item_img">
                             <img src="./img/main/main_news/1.jpg" alt="">
                         </div>
@@ -254,11 +248,11 @@
         </div>
     </div>
 </section>
-            <section class="main_objects section this--dots js-anim-block hide">
+            <section class="main_objects section this--dots">
     <div class="dots"></div>
     <div class="container">
         <div class="main_objects__content">
-            <div class="main_objects__top">
+            <div class="main_objects__top js-anim-block hide">
                 <h2 class="main_objects__title this--wave">Объекты</h2>
                 <a href="#" class="main_objects__link btn this--transparent this--svg this--arrow">все объекты
                     <svg width="48" height="30" viewBox="0 0 48 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -266,7 +260,7 @@
                     </svg>
                 </a>
             </div>
-            <form action="#" class="main_objects__form" name="main_objects__form">
+            <form action="#" class="main_objects__form js-anim-block hide" name="main_objects__form">
                 <input type="text" class="main_objects__form_search" placeholder="Введите название ЖК">
                 <button class="main_objects__form_submit">
                     <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -275,7 +269,7 @@
                     </svg>
                 </button>
             </form>
-            <div class="main_objects__slider swiper-container">
+            <div class="main_objects__slider swiper-container js-anim-block hide">
                 <div class="main_objects__slider_arrows">
                     <div class="main_objects__slider_arrow_prev">
                         <svg width="48" height="30" viewBox="0 0 48 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -773,7 +767,7 @@
 </section>
             <section class="main_about section js-anim-block hide">
     <div class="main_about__content">
-        <div class="main_about__content_left">
+        <div class="main_about__content_left js-anim-block hide">
             <h2 class="main_about__title this--wave">О компании</h2>
             <div class="main_about__text">
                 <p>Компания “Дом Сервис” была основана в 2008 году. А также реплицированные с зарубежных источников, современные исследования лишь добавляют фракционных разногласий и заблокированы в рамках своих собственных рациональных ограничений.</p>
@@ -791,9 +785,9 @@
         </div>
     </div>
 </section>
-            <section class="main_contacts section this--top this--dots js-anim-block hide">
+            <section class="main_contacts section this--top this--dots">
     <div class="dots"></div>
-    <div class="main_contacts__content">
+    <div class="main_contacts__content js-anim-block hide">
         <div class="main_contacts__content_left">
             <h2 class="main_contacts__title this--wave">Контакты</h2>
             <a href="tel:+78126023190" class="main_contacts__tel">+7 (812) 602-31-90</a>
@@ -819,7 +813,7 @@
                 </svg>
             </a>
         </div>
-        <div class="main_contacts__content_right">
+        <div class="main_contacts__content_right js-anim-block hide">
             <div class="main_contacts__map" id="map"></div>
         </div>
     </div>

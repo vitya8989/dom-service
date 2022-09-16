@@ -261,6 +261,7 @@ h4 {
   border: 1px solid #66A1AD;
   padding: 0 20px;
   font-size: 1.6rem;
+  color: #327C8C;
 }
 
 .btn.this--transparent:active {
@@ -447,37 +448,6 @@ h4 {
 .preloader.this--hidden {
   opacity: 0;
   visibility: hidden;
-}
-
-.preloader__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.preloader__title {
-  font-family: PoiretOne, sans-serif;
-  font-weight: 400;
-  font-size: 4rem;
-  line-height: 1.18;
-  text-align: center;
-  color: #327C8C;
-}
-
-.preloader__img {
-  margin-top: 20px;
-  width: 201px;
-}
-
-.preloader__img img {
-  width: 100%;
 }
 
 .header {
@@ -1454,7 +1424,7 @@ h4 {
 }
 
 .main_contacts__map {
-  min-height: 740px;
+  height: 740px;
 }
 
 @media (min-width: 1024px) {
@@ -1521,6 +1491,11 @@ h4 {
   .header__link.this--icon:hover svg circle,
   .header__link.this--icon:hover svg path {
     stroke: #327C8C;
+  }
+
+  .header__link.this--icon.this--blue:hover svg circle,
+  .header__link.this--icon.this--blue:hover svg path {
+    stroke: #66A1AD;
   }
 
   .footer__tel:hover {
@@ -1784,6 +1759,10 @@ h4 {
 
   .object__info {
     display: none;
+  }
+
+  .preloader {
+    background: url("../img/preloader/preloader1024.jpg") center/cover no-repeat;
   }
 
   .header__content {
@@ -2236,7 +2215,7 @@ h4 {
   }
 
   .main_contacts__map {
-    min-height: 350px;
+    height: 350px;
   }
 }
 
@@ -2370,14 +2349,6 @@ h4 {
 }
 
 @media (max-width: 639.9px) {
-  .preloader__title {
-    font-size: 2.4rem;
-  }
-
-  .preloader__img {
-    width: 157px;
-  }
-
   .footer__times {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2425,6 +2396,11 @@ h4 {
 @media (max-width: 1699.9px){
 
   .webp .dots{ background: url(../img/icons/dots_small.webp) center/contain no-repeat; }
+}
+
+@media (max-width: 1023.9px){
+
+  .webp .preloader{ background: url(../img/preloader/preloader1024.webp) center/cover no-repeat; }
 }
 
 @media (max-width: 767.9px){

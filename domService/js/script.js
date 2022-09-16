@@ -1,7 +1,7 @@
 let preloader = document.querySelector('.preloader');
 
 window.addEventListener('load', () => {
-    preloader.classList.add('this--hidden');
+   preloader.classList.add('this--hidden');
 });;
 const headerBurger = document.querySelector('.header__burger');
 const headerMobileMenu = document.querySelector('.header__row');
@@ -179,6 +179,12 @@ if (animBlocks.length > 0) {
     window.addEventListener('load', () => {
         for (let i = 0; i < animBlocks.length; i++) {
             offsetPositions.push(animBlocks[i].getBoundingClientRect().top + window.pageYOffset);
+        }
+        let centerOfWindow = window.pageYOffset + window.innerHeight / 8 * 7;
+        for (let i = 0; i < offsetPositions.length; i++) {
+            if (centerOfWindow >= offsetPositions[i]) {
+                animBlocks[i].classList.remove('hide');
+            }
         }
     });
     window.addEventListener('scroll', () => {
