@@ -82,7 +82,7 @@ body {
 	}
 }
 .js-anim-block {
-	transition: all 1.2s ease 0s;
+	transition: opacity 1.2s ease 0s, transform 1.2s ease 0s;
 	&.hide {
 		opacity: 0;
 		visibility: hidden;

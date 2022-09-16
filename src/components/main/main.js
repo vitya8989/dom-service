@@ -17,7 +17,7 @@ const mainChess = document.querySelector('.main_chess');
 
 if (mainChess) {
 
-    const numAnimTime = 2500;
+    const numAnimTime = 1500;
     const numAnimElements = mainChess.querySelectorAll('.js_anim_number');
 
     window.addEventListener('load', () => {

@@ -152,9 +152,11 @@ body.scroll-lock {
 }
 
 .js-anim-block {
-  -webkit-transition: all 1.2s ease 0s;
-  -o-transition: all 1.2s ease 0s;
-  transition: all 1.2s ease 0s;
+  -webkit-transition: opacity 1.2s ease 0s, -webkit-transform 1.2s ease 0s;
+  transition: opacity 1.2s ease 0s, -webkit-transform 1.2s ease 0s;
+  -o-transition: opacity 1.2s ease 0s, transform 1.2s ease 0s;
+  transition: opacity 1.2s ease 0s, transform 1.2s ease 0s;
+  transition: opacity 1.2s ease 0s, transform 1.2s ease 0s, -webkit-transform 1.2s ease 0s;
 }
 
 .js-anim-block.hide {
