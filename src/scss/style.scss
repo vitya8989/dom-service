@@ -1,0 +1,114 @@
+@import "null";
+@import "variables";
+
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+@import "fonts";
+
+html {
+	font-size: 10px;
+}
+body {
+	font-size: 1.8rem;
+	line-height: 1.67;
+	font-family: Commissioner, sans-serif;
+	font-weight: 400;
+	color: #383838;
+
+	@media ($tablet3) {
+		font-size: 1.4rem;
+		line-height: 1.43;
+	}
+
+	&.scroll-lock {
+		overflow: hidden;
+	}
+}
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1360px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.section {
+	padding: 60px 0;
+	&.this--top {
+		padding: 60px 0 0 0;
+		@media ($tablet) {
+			padding: 40px 0 0 0;
+
+			&.this--dots {
+				padding: 60px 0 0 0;
+			}
+		}
+	}
+	&.this--bottom {
+		padding: 0 0 60px 0;
+		@media ($tablet) {
+			padding: 0 0 20px 0;
+			&.this--dots {
+				padding: 0 0 60px 0;
+			}
+		}
+	}
+
+	@media ($tablet) {
+		padding: 40px 0 20px;
+		&.this--dots {
+			padding: 60px 0 20px;
+		}
+	}
+}
+.main {
+	flex: 1 0 auto;
+	padding-top: 114px;
+	background: #ffffff;
+
+	@media ($tablet) {
+		padding-top: 70px;
+	}
+}
+.js-anim-block {
+	transition: all 1.2s ease 0s;
+	&.hide {
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(80px);
+	}
+}
+
+@import "./blocks/title";
+@import "./blocks/btn";
+@import "./blocks/dots";
+@import "./blocks/object";
+
+
+@import "../components/preloader/preloader";
+@import "../components/header/header";
+@import "../components/footer/footer";
+@import "../components/main/main_top/main_top";
+@import "../components/main/main_chess/main_chess";
+@import "../components/main/main_links/main_links";
+@import "../components/main/main_services/main_services";
+@import "../components/main/main_news/main_news";
+@import "../components/main/main_objects/main_objects";
+@import "../components/main/main_about/main_about";
+@import "../components/main/main_contacts/main_contacts";
+
+
+
+
+

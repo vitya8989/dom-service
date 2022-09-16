@@ -1,0 +1,60 @@
+h1 {
+  font-family: PoiretOne, sans-serif;
+  font-size: 8rem;
+  line-height: 1.18;
+  font-weight: 400;
+
+  @media ($tablet3) {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-family: PoiretOne, sans-serif;
+  font-size: 7rem;
+  line-height: 1.18;
+  font-weight: 400;
+
+  @media ($tablet3) {
+    font-size: 3.6rem;
+  }
+
+  &.this--wave {
+    display: flex;
+    align-items: flex-end;
+    &::after {
+      flex: 0 0 auto;
+      content: '';
+      width: 164px;
+      height: 21px;
+      margin-bottom: 23px;
+      background: url('../img/icons/wave.svg') center/contain no-repeat;
+      margin-left: 35px;
+
+      @media ($tablet3) {
+        width: 114px;
+        height: 15px;
+        margin-left: 10px;
+        margin-bottom: 9px;
+      }
+    }
+  }
+}
+h3 {
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 1.38;
+  @media ($tablet3) {
+    font-size: 1.8rem;
+    line-height: 1.44;
+  }
+}
+h4 {
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 1.64;
+  @media ($tablet3) {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+}

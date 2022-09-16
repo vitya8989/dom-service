@@ -1,0 +1,354 @@
+.header {
+  background: #FFFFFF;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  padding: 15px 50px;
+  min-height: 114px;
+  @media ($desktopBig) {
+    padding: 10px 20px;
+  }
+  @media ($tablet) {
+    min-height: 70px;
+    justify-content: space-between;
+  }
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+.header__logo_img {
+  flex: 0 0 auto;
+  width: 105px;
+  margin-right: 10px;
+
+  @media ($tablet) {
+    width: 71px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+.header__logo_text {
+  font-size: 1.6rem;
+  line-height: 1.38;
+  color: #327C8C;
+  @media ($tablet) {
+    font-size: 1.2rem;
+    line-height: 1.33;
+  }
+}
+.header__burger {
+  display: none;
+  @media ($tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+
+    span {
+      width: calc(33.333% - 10px);
+      height: 5px;
+      border-radius: 50%;
+      background: #48B9E1;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
+.header__row {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media ($tablet) {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    background: #F8FBFC;
+    padding: 50px 0 70px;
+    transform: translateX(120%);
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 101;
+
+    &.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+  }
+}
+.header__cross {
+  display: none;
+  @media ($tablet) {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 50px;
+    height: 50px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      width: 42px;
+      height: 3px;
+      background: #48B9E1;
+      top: calc(50% - 1.5px);
+      left: 5px;
+      border-radius: 5px;
+    }
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+.header__nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: -10px;
+  margin-right: 40px;
+  @media ($desktopSuperBig) {
+    margin-right: 25px;
+  }
+  @media ($tablet) {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  li {
+    margin-left: 40px;
+    margin-bottom: 10px;
+    @media ($desktopSuperBig) {
+      margin-left: 25px;
+    }
+    @media ($tablet) {
+      margin-left: 0;
+      margin-bottom: 0;
+      padding: 20px 0;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 1px;
+        background: #E4E4E4;
+        bottom: 0;
+        left: calc(50% - 25px);
+      }
+    }
+  }
+
+  &.this--footer {
+    margin-right: 0;
+    margin-left: -40px;
+    li {
+      margin-left: 40px;
+    }
+    @media ($tablet) {
+      display: none;
+    }
+    .header__nav_link {
+      color: #ffffff;
+      &:hover {
+        @media ($tabletMax) {
+          color: #8FBDC7;
+        }
+      }
+
+      &:active {
+        color: #66A1AD!important;
+      }
+    }
+  }
+}
+.header__nav_link {
+  color: #383838;
+  transition: 0.3s;
+  position: relative;
+
+  &:hover {
+    @media ($tabletMax) {
+      color: #327C8C;
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: #327C8C;
+    transition: 0.3s;
+  }
+
+  &:active {
+    color: #225C69!important;
+  }
+}
+.header__group {
+  display: flex;
+  align-items: center;
+  @media ($tablet) {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+}
+.header__contacts {
+  margin-right: 40px;
+  @media ($desktopBig) {
+    margin-right: 30px;
+  }
+  @media ($tablet) {
+    margin-right: 0;
+  }
+}
+.header__tel {
+  display: block;
+  text-align: right;
+  font-size: 2.6rem;
+  line-height: 1.38;
+  color: #327C8C;
+  transition: 0.3s;
+  white-space: nowrap;
+  &:hover {
+    @media ($tabletMax) {
+      color: #66A1AD;
+    }
+  }
+  &:active {
+    color: #225C69!important;
+  }
+
+  @media ($desktopBig) {
+    font-size: 2rem;
+  }
+  @media ($tablet) {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.44;
+  }
+}
+.header__mail {
+  display: block;
+  text-align: right;
+  color: #383838;
+  transition: 0.3s;
+  white-space: nowrap;
+
+  @media ($tablet) {
+    text-align: center;
+    margin-top: 10px;
+  }
+  &:hover {
+    @media ($tabletMax) {
+      color: #327C8C;
+    }
+  }
+  &:active {
+    color: #225C69!important;
+  }
+}
+.header__links {
+  display: flex;
+  align-items: center;
+  margin-left: -25px;
+  @media ($desktopBig) {
+    margin-left: -15px;
+  }
+  @media ($tablet) {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 259px;
+    margin-left: -25px;
+    margin-bottom: -20px;
+    margin-top: 20px;
+  }
+}
+.header__link {
+  margin-left: 25px;
+  @media ($desktopBig) {
+    margin-left: 15px;
+  }
+  @media ($tablet) {
+    margin-left: 25px;
+    margin-bottom: 20px;
+  }
+  &:not(.this--btn) {
+    width: 32px;
+    height: 32px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+
+      circle, path {
+        transition: 0.3s;
+      }
+    }
+  }
+  &.this--btn {
+    height: 70px;
+
+    @media ($desktopBig) {
+      font-size: 0;
+      &::before {
+        margin-right: 0;
+      }
+    }
+    @media ($tablet) {
+      font-size: 1.6rem;
+      width: calc(100% - 25px);
+      &::before {
+        margin-right: 8px;
+      }
+    }
+  }
+  &.this--icon {
+    &:hover {
+      @media ($tabletMax) {
+        svg {
+          circle, path {
+            stroke: #327C8C;
+          }
+        }
+      }
+    }
+    &:active {
+      svg {
+        circle, path {
+          stroke: #225C69!important;
+        }
+      }
+    }
+  }
+}

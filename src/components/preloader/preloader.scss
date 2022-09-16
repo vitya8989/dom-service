@@ -1,0 +1,48 @@
+.preloader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  background: url('../img/preloader/preloader.jpg') center/cover no-repeat;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.this--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.preloader__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.preloader__title {
+  font-family: PoiretOne, sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 1.18;
+  text-align: center;
+  color: #327C8C;
+
+  @media ($mobile) {
+    font-size: 2.4rem;
+  }
+}
+.preloader__img {
+  margin-top: 20px;
+  width: 201px;
+
+  @media ($mobile) {
+    width: 157px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,175 @@
+.main_chess {
+  position: relative;
+  transition: all 1.2s ease 0.5s;
+  &.hide {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(80px);
+  }
+
+  .dots {
+    @media ($desktopSuperBigMax) {
+      top: 120px;
+    }
+  }
+}
+.main_chess__content {
+  padding-bottom: 20px;
+}
+.main_chess__chess {
+  margin-bottom: 40px;
+  display: flex;
+
+  @media ($tablet) {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &.this--reverse {
+    @media ($tabletMax) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+.main_chess__chess_left {
+  margin-top: 35px;
+  width: calc(50% - 50px);
+  margin-right: 50px;
+  padding-left: calc((100vw - 1320px) / 2 - 13px);
+
+  @media ($desktopBig) {
+    margin-right: 20px;
+    width: calc(50% - 20px);
+  }
+
+  @media (max-width: 1386px) {
+    padding-left: 20px;
+  }
+  @media ($tablet) {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .main_chess__chess.this--reverse & {
+    @media ($tabletMax) {
+      padding-left: 0;
+      padding-right: calc((100vw - 1320px) / 2 - 13px);
+      margin-right: 0;
+      margin-left: 50px;
+    }
+    @media ($desktopBig) {
+      margin-left: 20px;
+    }
+    @media ($tablet) {
+      margin-left: 0;
+    }
+  }
+}
+.main_chess__chess_right {
+  width: calc(50% - 50px);
+  margin-left: 50px;
+  @media ($desktopBig) {
+    margin-left: 20px;
+    width: calc(50% - 20px);
+  }
+  @media ($tablet) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    padding-left: 20%;
+  }
+  .main_chess__chess.this--reverse & {
+    @media ($tabletMax) {
+      margin-right: 50px;
+      margin-left: 0;
+    }
+    @media ($desktopBig) {
+      margin-right: 20px;
+    }
+    @media ($tablet) {
+      padding-right: 20%;
+      padding-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+.main_chess__chess_img {
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+
+  @media ($tablet) {
+    min-height: 0;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.main_chess__chess_counts {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-bottom: -30px;
+}
+.main_chess__chess_count {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+
+  .main_chess__chess_counts.this--100 & {
+    width: calc(100% - 20px);
+  }
+  .main_chess__chess_counts.this--50 & {
+    &:nth-child(even) {
+      width: calc(40% - 20px);
+    }
+    &:nth-child(odd) {
+      width: calc(60% - 20px);
+    }
+
+    @media ($desktopBig) {
+      &:nth-child(even) {
+        width: calc(100% - 20px);
+      }
+      &:nth-child(odd) {
+        width: calc(100% - 20px);
+      }
+    }
+    @media ($tablet) {
+      &:nth-child(even) {
+        width: calc(40% - 20px);
+      }
+      &:nth-child(odd) {
+        width: calc(60% - 20px);
+      }
+    }
+  }
+}
+.main_chess__chess_count_value {
+  font-family: PoiretOne, sans-serif;
+  font-weight: 400;
+  font-size: 8rem;
+  line-height: 1.18;
+  color: #327C8C;
+  margin-right: 20px;
+  white-space: nowrap;
+
+  @media ($tablet3) {
+    font-size: 3.8rem;
+    line-height: 1.24;
+    margin-right: 10px;
+  }
+}
+.main_chess__chess_count_text {
+  white-space: nowrap;
+  @media ($tablet3) {
+    font-size: 1.4rem;
+    line-height: 1.29;
+  }
+}

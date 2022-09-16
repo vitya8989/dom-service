@@ -1,0 +1,17 @@
+.dots {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  width: 81px;
+  height: 178px;
+  background: url('../img/icons/dots.png') center/contain no-repeat;
+  z-index: 2;
+
+  @media ($desktopSuperBig) {
+    background: url('../img/icons/dots_small.png') center/contain no-repeat;
+    top: 24px;
+    left: 15px;
+    width: 57px;
+    height: 21px;
+  }
+}
