@@ -13,6 +13,12 @@
       }
     }
   }
+  &.objects_map__object.active {
+    @media ($tablet) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 .object__body {
   position: relative;
@@ -30,6 +36,23 @@
     height: 100%;
     object-fit: cover;
   }
+  .object.objects__item & {
+    @media ($tablet3) {
+      height: 0;
+      img {
+        display: none;
+      }
+    }
+  }
+  .object.objects_map__object & {
+    @media ($tablet) {
+      height: auto;
+      order: 3;
+      img {
+        display: none;
+      }
+    }
+  }
 }
 .object__year {
   position: absolute;
@@ -44,11 +67,34 @@
   line-height: 1.64;
   color: #327C8C;
   z-index: 2;
+  .object.objects__item & {
+    @media ($tablet3) {
+      font-size: 1.6rem;
+      line-height: 1.5;
+      top: 2px;
+      right: 0;
+      left: auto;
+      padding: 0;
+      background: none;
+      box-shadow: none;
+    }
+  }
+  .object.objects_map__object & {
+    @media ($tablet) {
+      display: none;
+    }
+  }
 }
 .object__title {
   margin-top: 10px;
   color: #383838;
   transition: 0.3s;
+  .object.objects__item & {
+    @media ($tablet3) {
+      margin-top: 0;
+      padding-right: 50px;
+    }
+  }
 }
 .object__address {
   color: #8D8D8D;
@@ -70,10 +116,35 @@
 
   @media ($tablet) {
     display: none;
+
+    .object.objects_map__object & {
+      position: static;
+      display: block;
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+      width: 100%;
+      background: #F8FBFC;
+      border: none;
+      padding: 0;
+      margin-top: 15px;
+    }
+  }
+
+  .object.objects__item & {
+    @media ($desktop) {
+      width: 100%;
+      padding: 40px 20px;
+    }
   }
 }
 .object__info_item {
   margin-bottom: 20px;
+  .object.objects_map__object & {
+    @media ($tablet3) {
+      margin-bottom: 10px;
+    }
+  }
 }
 .object__info_item_title {
   color: #8D8D8D;
@@ -83,10 +154,16 @@
   }
 }
 .object__info_item_value {
+  color: #8D8D8D;
+
   span {
     color: #000000;
     font-size: 2.6rem;
     line-height: 1.38;
+    @media ($tablet3) {
+      font-size: 1.8rem;
+      line-height: 1.44;
+    }
   }
 
   &.this--black {
@@ -96,4 +173,16 @@
 .object__info_btn {
   width: 209px;
   margin-top: 40px;
+
+  .object.objects_map__object & {
+    @media ($tablet) {
+     width: 335px;
+    }
+    @media ($tablet3) {
+      margin-top: 15px;
+    }
+    @media ($mobileMiddle) {
+      width: 100%;
+    }
+  }
 }

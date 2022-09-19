@@ -7,11 +7,18 @@
   background: url('../img/icons/dots.png') center/contain no-repeat;
   z-index: 2;
 
+  &.this--wh {
+    background: url('../img/icons/dots_wh.png') center/contain no-repeat;
+  }
+
   @media ($desktopSuperBig) {
     background: url('../img/icons/dots_small.png') center/contain no-repeat;
     top: 24px;
     left: 15px;
     width: 57px;
     height: 21px;
+    &.this--wh {
+      background: url('../img/icons/dots_small_wh.png') center/contain no-repeat;
+    }
   }
 }

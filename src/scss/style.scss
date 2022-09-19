@@ -94,6 +94,7 @@ body {
 @import "./blocks/btn";
 @import "./blocks/dots";
 @import "./blocks/object";
+@import "./blocks/breadcrumbs";
 
 
 @import "../components/preloader/preloader";
@@ -107,6 +108,12 @@ body {
 @import "../components/main/main_objects/main_objects";
 @import "../components/main/main_about/main_about";
 @import "../components/main/main_contacts/main_contacts";
+
+@import "../components/objects/objects_objects/objects_objects";
+@import "../components/objects/objects_map/objects_map";
+
+@import "../components/object_card/object_card_top/object_card_top";
+@import "../components/object_card/object_card_contacts/object_card_contacts";
 
 
 

@@ -1,0 +1,35 @@
+.object_card_contacts {
+  padding: 40px 0 54px;
+  @media ($tablet) {
+    padding: 30px 0;
+  }
+}
+.object_card_contacts__content {
+  display: flex;
+  margin-left: -30px;
+  justify-content: space-between;
+  margin-bottom: -20px;
+
+  @media ($tablet) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  @media ($tablet3) {
+    margin-left: 0;
+  }
+
+  .object__info_item {
+    max-width: 295px;
+    margin-left: 30px;
+
+    @media ($tablet) {
+      flex-wrap: wrap;
+      max-width: none;
+      width: calc(50% - 30px);
+    }
+    @media ($tablet3) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}

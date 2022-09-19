@@ -1,6 +1,8 @@
 @@include('../components/preloader/preloader.js');
 @@include('../components/header/header.js');
 @@include('../components/main/main.js');
+@@include('../components/objects/objects.js');
+@@include('../components/object_card/object_card.js');
 
 const animBlocks = document.querySelectorAll('.js-anim-block');
 
