@@ -1,0 +1,39 @@
+.object_card_info__tabs {
+  margin-bottom: -40px;
+  margin-top: 34px;
+
+  @media ($tablet) {
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: -30px;
+  }
+}
+.object_card_info__tabs_block {
+  margin-bottom: 40px;
+  @media ($tablet) {
+    margin-bottom: 30px;
+  }
+}
+.object_card_info__tabs_top {
+  display: flex;
+  margin-left: -10px;
+  margin-bottom: -15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  @media ($tablet) {
+    margin-top: 15px;
+    margin-left: -5px;
+    margin-bottom: -5px;
+  }
+}
+.object_card_info__tabs_link {
+  margin-left: 10px;
+  margin-bottom: 15px;
+  @media ($tablet) {
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+}
+.object_card_info__tabs_bottom {
+  margin-top: 24px;
+}

@@ -9,24 +9,13 @@ if (headerMobileMenu) {
     const headerCross = headerMobileMenu.querySelector('.header__cross');
     headerBurger.onclick = () => {
         headerMobileMenu.classList.add('open');
+        document.body.classList.add('scroll-lock');
     }
     headerCross.onclick = () => {
         headerMobileMenu.classList.remove('open');
+        document.body.classList.remove('scroll-lock');
     }
 };
-// main_top
-
-const mainTopContent = document.querySelector('.main_top__content');
-
-if (mainTopContent) {
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            mainTopContent.classList.remove('hide');
-        }, 200);
-    });
-}
-
-
 // main_chess
 
 const mainChess = document.querySelector('.main_chess');
@@ -37,8 +26,6 @@ if (mainChess) {
     const numAnimElements = mainChess.querySelectorAll('.js_anim_number');
 
     window.addEventListener('load', () => {
-
-        mainChess.classList.remove('hide');
 
         animNum(numAnimElements, numAnimTime);
 
@@ -247,7 +234,154 @@ if (objectsMap) {
 
     }
 };
-;
+// gallery
+
+let objectCardGallerySlider = document.querySelector('.object_card_gallery__slider');
+
+if (objectCardGallerySlider) {
+    new Swiper('.object_card_gallery__slider', {
+        speed: 700,
+        slidesPerView: 'auto',
+        spaceBetween: 15,
+        navigation: {
+            nextEl: '.object_card_gallery__slider_arrow_next',
+            prevEl: '.object_card_gallery__slider_arrow_prev'
+        },
+        pagination: {
+            el: '.object_card_gallery__slider_pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            1024: {
+                spaceBetween: 20,
+                slidesPerView: 3,
+            }
+        }
+    });
+}
+
+
+
+// tabs
+
+const tabs = document.querySelectorAll('.js_tabs');
+
+if (tabs.length > 0) {
+    for (let tab of tabs) {
+        const tabLink = tab.querySelectorAll('.js_tab_link');
+        const tabBody = tab.querySelectorAll('.js_tab_body');
+        const tabBodyMobClose = document.querySelectorAll('.tab__body_mob_close');
+
+        for (let tabBodyClose of tabBodyMobClose) {
+            tabBodyClose.onclick = () => {
+                if (window.innerWidth < 640) {
+                    for (let body of tabBody) {
+                        body.classList.remove('active');
+                        document.body.classList.remove('scroll-lock');
+                    }
+                    for (let link of tabLink) {
+                        link.classList.remove('active');
+                    }
+                }
+            }
+        }
+
+        for (let i = 0; i < tabLink.length; i++) {
+            tabLink[i].onclick = function (e) {
+                e.preventDefault();
+                for (let link of tabLink) {
+                    if (link !== this) {
+                        link.classList.remove('active');
+                    }
+                }
+                for (let j = 0; j < tabBody.length; j++) {
+                    if (tabBody[j].dataset.id === tabLink[i].dataset.id) {
+                        if (tabBody[j].classList.contains('active') && this.classList.contains('active')) {
+                            this.classList.remove('active');
+                            tabBody[j].classList.remove('active');
+                        } else {
+                            this.classList.add('active');
+                            tabBody[j].classList.add('active');
+                            if (window.innerWidth < 640) {
+                                document.body.classList.add('scroll-lock');
+                            }
+                        }
+                    } else {
+                        tabBody[j].classList.remove('active');
+                    }
+                }
+            }
+        }
+    }
+};
+let newsCardPhotoSlider = document.querySelector('.news_card_photo__slider');
+
+if (newsCardPhotoSlider) {
+    new Swiper('.news_card_photo__slider', {
+        speed: 700,
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.news_card_photo__slider_arrow_next',
+            prevEl: '.news_card_photo__slider_arrow_prev'
+        },
+        pagination: {
+            el: '.news_card_photo__slider_pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            1024: {
+                spaceBetween: 25,
+            }
+        }
+    });
+};
+let defaultPageSlider = document.querySelector('.default_page__slider');
+
+if (defaultPageSlider) {
+    new Swiper('.default_page__slider', {
+        speed: 700,
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.default_page__slider_btn_next',
+            prevEl: '.default_page__slider_btn_prev'
+        },
+        pagination: {
+            el: '.default_page__slider_pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            }
+        }
+    });
+};
+let servicesCardPhotoSlider = document.querySelector('.services_card_photo__slider');
+
+if (servicesCardPhotoSlider) {
+    new Swiper('.services_card_photo__slider', {
+        speed: 700,
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.services_card_photo__slider_arrow_next',
+            prevEl: '.services_card_photo__slider_arrow_prev'
+        },
+        pagination: {
+            el: '.services_card_photo__slider_pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            1024: {
+                spaceBetween: 25,
+            }
+        }
+    });
+};
+
 
 const animBlocks = document.querySelectorAll('.js-anim-block');
 
@@ -257,7 +391,7 @@ if (animBlocks.length > 0) {
         for (let i = 0; i < animBlocks.length; i++) {
             offsetPositions.push(animBlocks[i].getBoundingClientRect().top + window.pageYOffset);
         }
-        let centerOfWindow = window.pageYOffset + window.innerHeight / 8 * 7;
+        let centerOfWindow = window.pageYOffset + window.innerHeight;
         for (let i = 0; i < offsetPositions.length; i++) {
             if (centerOfWindow >= offsetPositions[i]) {
                 animBlocks[i].classList.remove('hide');

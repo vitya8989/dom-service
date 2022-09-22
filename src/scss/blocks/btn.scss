@@ -12,6 +12,10 @@
     height: 70px;
   }
 
+  &.this--bold {
+    font-weight: 600;
+  }
+
   &.this--dark {
     background: #225C69;
     color: #ffffff;
@@ -89,6 +93,20 @@
         }
       }
     }
+    &.this--reverse {
+      &:hover {
+        @media ($tabletMax) {
+          svg {
+            transform: translateX(-2px);
+          }
+        }
+      }
+      &:active {
+        svg {
+          transform: translateX(-2px);
+        }
+      }
+    }
   }
 
   &.this--svg {
@@ -109,6 +127,20 @@
         margin-left: 20px;
         margin-right: 0;
       }
+    }
+    &.this--reverse {
+      svg {
+        margin-left: 0;
+        margin-right: 20px;
+      }
+    }
+  }
+  &.this--arrow {
+    svg {
+      width: 47px;
+      height: 28px;
+      margin-left: 20px;
+      margin-right: 0;
     }
   }
 

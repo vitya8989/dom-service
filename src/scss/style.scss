@@ -42,6 +42,12 @@ body {
 	max-width: 1360px;
 	padding: 0 20px;
 	margin: 0 auto;
+
+	&.this--slider {
+		@media ($tablet3) {
+			overflow: hidden;
+		}
+	}
 }
 .section {
 	padding: 60px 0;
@@ -80,13 +86,42 @@ body {
 	@media ($tablet) {
 		padding-top: 70px;
 	}
+
+	&.this--flex {
+		display: flex;
+		flex-direction: column;
+	}
 }
 .js-anim-block {
-	transition: opacity 1.2s ease 0s, transform 1.2s ease 0s;
+	transition: opacity 1s ease 0s, transform 1s ease 0s;
 	&.hide {
 		opacity: 0;
 		visibility: hidden;
-		transform: translateY(80px);
+		transform: translateY(70px);
+	}
+
+	&.this--from_top {
+		&.hide {
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(-70px);
+		}
+	}
+}
+
+.small_container {
+	max-width: 900px;
+}
+.g_mb_40 {
+	margin-bottom: 40px;
+	@media ($tablet) {
+		margin-bottom: 20px;
+	}
+}
+.g_mb_20 {
+	margin-bottom: 20px;
+	@media ($tablet) {
+		margin-bottom: 10px;
 	}
 }
 
@@ -95,6 +130,10 @@ body {
 @import "./blocks/dots";
 @import "./blocks/object";
 @import "./blocks/breadcrumbs";
+@import "./blocks/default_slider";
+@import "./blocks/tab";
+@import "./blocks/documents";
+@import "./blocks/pagination";
 
 
 @import "../components/preloader/preloader";
@@ -114,8 +153,30 @@ body {
 
 @import "../components/object_card/object_card_top/object_card_top";
 @import "../components/object_card/object_card_contacts/object_card_contacts";
+@import "../components/object_card/object_card_gallery/object_card_gallery";
+@import "../components/object_card/object_card_info/object_card_info";
 
+@import "../components/services/services";
 
+@import "../components/news/news";
 
+@import "../components/news_card/news_card";
+
+@import "../components/default_page/default_page";
+
+@import "../components/contacts/contacts_top/contacts_top";
+@import "../components/contacts/contacts_info/contacts_info";
+
+@import "../components/services_card/services_card_top/services_card_top";
+@import "../components/services_card/services_card_photo/services_card_photo";
+
+@import "../components/about/about_top/about_top";
+@import "../components/about/about_slider/about_slider";
+@import "../components/about/about_management/about_management";
+@import "../components/about/about_history/about_history";
+
+@import "../components/page_404/page_404";
+
+@import "../components/gallery/gallery";
 
 

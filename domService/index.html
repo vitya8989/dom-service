@@ -36,11 +36,11 @@
         <div class="header__row">
             <span class="header__cross"></span>
             <ul class="header__nav">
-                <li><a href="#" class="header__nav_link">О компании</a></li>
-                <li><a href="#" class="header__nav_link">Услуги</a></li>
+                <li><a href="/about.html" class="header__nav_link">О компании</a></li>
+                <li><a href="/services.html" class="header__nav_link">Услуги</a></li>
                 <li><a href="/objects.html" class="header__nav_link">Объекты</a></li>
-                <li><a href="#" class="header__nav_link">Новости</a></li>
-                <li><a href="#" class="header__nav_link">Контакты</a></li>
+                <li><a href="/news.html" class="header__nav_link">Новости</a></li>
+                <li><a href="/contacts.html" class="header__nav_link">Контакты</a></li>
             </ul>
             <div class="header__group">
                 <div class="header__contacts">
@@ -59,7 +59,7 @@
                             <path d="M5.5 8H1C1.5 21 14 25.8333 16.5 25C18 24.5 15.5 20.5 18 20C20 19.6 23.1667 23.1667 24.5 25H30C30.5 23.5 25 18.5 24 17C26.5 14 29 9.5 29.5 8H24.5C22.6667 10.5 18.7 15.5 17.5 15.5C16.3 15.5 16.6667 10.5 17 8H10.5C13 11 12.5 17.5 11 17C9.8 16.6 6.83333 10.8333 5.5 8Z" stroke="#327C8C" stroke-width="2" stroke-linejoin="round"/>
                         </svg>
                     </a>
-                    <a href="#" class="header__link this--btn btn this--dark this--lk">Личный кабинет</a>
+                    <a href="#" class="header__link this--btn btn this--dark this--lk this--bold">Личный кабинет</a>
                 </div>
             </div>
         </div>
@@ -69,12 +69,12 @@
             <div class="preloader">
 </div>
             <section class="main_top">
-    <div class="main_top__content hide">
+    <div class="main_top__content js-anim-block hide this--from_top">
         <h1 class="main_top__title">Дом Сервис</h1>
         <div class="main_top__subtitle">Группа управляющих компаний</div>
     </div>
 </section>
-            <section class="main_chess section this--top this--dots hide">
+            <section class="main_chess section this--top this--dots js-anim-block hide">
     <div class="dots"></div>
     <div class="main_chess__content">
         <div class="main_chess__chess">
@@ -130,7 +130,7 @@
         <div class="main_links__left">
             <div class="main_links__left_wr">
                 <div class="main_links__title">Оплачивайте услуги<br>не выходя из дома</div>
-                <a href="#" class="main_links__link btn this--dark this--lk">Личный кабинет</a>
+                <a href="#" class="main_links__link btn this--dark this--lk this--bold">Личный кабинет</a>
             </div>
         </div>
         <div class="main_links__right">
@@ -270,19 +270,19 @@
                 </button>
             </form>
             <div class="main_objects__slider swiper-container js-anim-block hide">
-                <div class="main_objects__slider_arrows">
-                    <div class="main_objects__slider_arrow_prev">
+                <div class="main_objects__slider_arrows default_slider__arrows">
+                    <div class="main_objects__slider_arrow_prev default_slider__arrow_prev">
                         <svg width="48" height="30" viewBox="0 0 48 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M48 15H0.999999M0.999999 15L14.9259 1M0.999999 15L14.9259 29" stroke="#327C8C"/>
                         </svg>
                     </div>
-                    <div class="main_objects__slider_arrow_next">
+                    <div class="main_objects__slider_arrow_next default_slider__arrow_next">
                         <svg width="48" height="30" viewBox="0 0 48 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 15H47M47 15L33.0741 1M47 15L33.0741 29" stroke="#327C8C"/>
                         </svg>
                     </div>
                 </div>
-                <div class="main_objects__slider_pagination"></div>
+                <div class="main_objects__slider_pagination default_slider__pagination"></div>
                 <div class="main_objects__slider_wrapper swiper-wrapper">
                     <div class="main_objects__slide swiper-slide">
                         <a href="#" class="main_objects__object object">
@@ -862,7 +862,6 @@
 </footer>
     </div>
 
-    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>

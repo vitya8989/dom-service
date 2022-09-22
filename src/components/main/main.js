@@ -1,16 +1,3 @@
-// main_top
-
-const mainTopContent = document.querySelector('.main_top__content');
-
-if (mainTopContent) {
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            mainTopContent.classList.remove('hide');
-        }, 200);
-    });
-}
-
-
 // main_chess
 
 const mainChess = document.querySelector('.main_chess');
@@ -21,8 +8,6 @@ if (mainChess) {
     const numAnimElements = mainChess.querySelectorAll('.js_anim_number');
 
     window.addEventListener('load', () => {
-
-        mainChess.classList.remove('hide');
 
         animNum(numAnimElements, numAnimTime);
 

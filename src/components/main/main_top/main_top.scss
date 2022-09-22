@@ -12,17 +12,6 @@
     min-height: 280px;
   }
 }
-.main_top__content {
-  transition: all 1.2s ease;
-  &.hide {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-70px);
-    @media ($tablet3) {
-      transform: translateY(-40px);
-    }
-  }
-}
 .main_top__title {
   font-weight: 300;
   font-family: PoiretOne, sans-serif;

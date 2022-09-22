@@ -101,6 +101,10 @@
 .main_news__item_date {
   color: #327C8C;
   margin-top: 20px;
+
+  @media ($tablet3) {
+    margin-top: 10px;
+  }
 }
 .main_news__item_title {
   margin-top: 5px;

@@ -1,0 +1,30 @@
+.about_slider__content {
+  @media ($tablet) {
+    padding-bottom: 20px;
+  }
+}
+.about_slider__row {
+  margin-top: 44px;
+  display: flex;
+  align-items: flex-start;
+  @media ($tablet) {
+    margin-top: 20px;
+    display: block;
+  }
+}
+.about_slider__text {
+  width: calc(50.75% - 40px);
+  margin-right: 40px;
+  @media ($tablet) {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+.about_slider__slider {
+  width: 49.25%;
+  @media ($tablet) {
+    margin-right: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+}

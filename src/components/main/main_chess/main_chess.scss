@@ -1,6 +1,6 @@
 .main_chess {
   position: relative;
-  transition: all 1.2s ease 0.5s;
+  transition: all 1s ease 0.5s;
   &.hide {
     opacity: 0;
     visibility: hidden;

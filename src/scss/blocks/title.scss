@@ -21,13 +21,13 @@ h2 {
 
   &.this--wave {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     &::after {
       flex: 0 0 auto;
       content: '';
       width: 164px;
       height: 21px;
-      margin-bottom: 23px;
+      margin-top: 17px;
       background: url('../img/icons/wave.svg') center/contain no-repeat;
       margin-left: 35px;
 
@@ -36,6 +36,14 @@ h2 {
         height: 15px;
         margin-left: 10px;
         margin-bottom: 9px;
+      }
+    }
+
+    &.this--no_mobile {
+      @media ($tablet) {
+        &::after {
+          display: none;
+        }
       }
     }
   }

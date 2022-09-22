@@ -8,6 +8,7 @@
     <title>Карточка объекта</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
 </head>
 
 <body>
@@ -36,11 +37,11 @@
         <div class="header__row">
             <span class="header__cross"></span>
             <ul class="header__nav">
-                <li><a href="#" class="header__nav_link">О компании</a></li>
-                <li><a href="#" class="header__nav_link">Услуги</a></li>
+                <li><a href="/about.html" class="header__nav_link">О компании</a></li>
+                <li><a href="/services.html" class="header__nav_link">Услуги</a></li>
                 <li><a href="/objects.html" class="header__nav_link">Объекты</a></li>
-                <li><a href="#" class="header__nav_link">Новости</a></li>
-                <li><a href="#" class="header__nav_link">Контакты</a></li>
+                <li><a href="/news.html" class="header__nav_link">Новости</a></li>
+                <li><a href="/contacts.html" class="header__nav_link">Контакты</a></li>
             </ul>
             <div class="header__group">
                 <div class="header__contacts">
@@ -59,7 +60,7 @@
                             <path d="M5.5 8H1C1.5 21 14 25.8333 16.5 25C18 24.5 15.5 20.5 18 20C20 19.6 23.1667 23.1667 24.5 25H30C30.5 23.5 25 18.5 24 17C26.5 14 29 9.5 29.5 8H24.5C22.6667 10.5 18.7 15.5 17.5 15.5C16.3 15.5 16.6667 10.5 17 8H10.5C13 11 12.5 17.5 11 17C9.8 16.6 6.83333 10.8333 5.5 8Z" stroke="#327C8C" stroke-width="2" stroke-linejoin="round"/>
                         </svg>
                     </a>
-                    <a href="#" class="header__link this--btn btn this--dark this--lk">Личный кабинет</a>
+                    <a href="#" class="header__link this--btn btn this--dark this--lk this--bold">Личный кабинет</a>
                 </div>
             </div>
         </div>
@@ -75,13 +76,13 @@
             <div class="object_card__breadcrumbs breadcrumbs">
                 <div class="breadcrumbs_wr">
                     <a href="/" class="breadcrumb this--link">Главная</a>
-                    <a href="/" class="breadcrumb this--link">Объекты</a>
+                    <a href="#" class="breadcrumb this--link">Объекты</a>
                     <div class="breadcrumb">ЖК «Золотые купола»</div>
                 </div>
             </div>
         </div>
-        <h1 class="object_card__title">ЖК «Золотые купола»</h1>
-        <div class="object_card__subtitle">Ленинградская область, Всеволожский муниципальный р-н, Сертоловское городское поселение, г. Сертолово, микрорайон Черная речка</div>
+        <h1 class="object_card__title js-anim-block hide this--from_top">ЖК «Золотые купола»</h1>
+        <div class="object_card__subtitle js-anim-block hide this--from_top">Ленинградская область, Всеволожский муниципальный р-н, Сертоловское городское поселение, г. Сертолово, микрорайон Черная речка</div>
     </div>
 </section>
         <div class="object_card_contacts">
@@ -109,6 +110,1050 @@
     </div>
 </div>
 
+        <section class="object_card_gallery section this--dots js-anim-block hide">
+    <div class="dots"></div>
+    <div class="container">
+        <div class="object_card_gallery__content">
+            <h2 class="this--wave">Галерея</h2>
+            <div class="object_card_gallery__slider swiper-container js-anim-block hide">
+                <div class="object_card_gallery__slider_arrows default_slider__arrows">
+                    <div class="object_card_gallery__slider_arrow_prev default_slider__arrow_prev">
+                        <svg width="48" height="30" viewBox="0 0 48 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M48 15H0.999999M0.999999 15L14.9259 1M0.999999 15L14.9259 29" stroke="#327C8C"/>
+                        </svg>
+                    </div>
+                    <div class="object_card_gallery__slider_arrow_next default_slider__arrow_next">
+                        <svg width="48" height="30" viewBox="0 0 48 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 15H47M47 15L33.0741 1M47 15L33.0741 29" stroke="#327C8C"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="object_card_gallery__slider_pagination default_slider__pagination"></div>
+                <div class="object_card_gallery__slider_wrapper swiper-wrapper">
+                    <div class="object_card_gallery__slider_slide swiper-slide">
+                        <a href="#" data-src="./img/main/main_objects/4.jpg" class="object_card_gallery__slide_link" data-fancybox="gallery-1">
+                            <div class="object_card_gallery__slide_img">
+                                <img src="./img/object_card/1.jpg" alt="">
+                            </div>
+                            <div class="object_card_gallery__slide_date">13.07.2022</div>
+                            <h4 class="object_card_gallery__slide_title">Мероприятие в честь дня детей</h4>
+                        </a>
+                        <a data-src="./img/main/main_objects/1.jpg" data-fancybox="gallery-1" class="object_card_gallery__slide_hide_img">
+                        </a>
+                        <a data-src="./img/main/main_objects/2.jpg" data-fancybox="gallery-1" class="object_card_gallery__slide_hide_img">
+                        </a>
+                        <a data-src="./img/main/main_objects/3.jpg" data-fancybox="gallery-1" class="object_card_gallery__slide_hide_img">
+                        </a>
+                    </div>
+                    <div class="object_card_gallery__slider_slide swiper-slide">
+                        <a href="#" class="object_card_gallery__slide_link" data-src="./img/main/main_objects/5.jpg" data-fancybox="gallery-2">
+                            <div class="object_card_gallery__slide_img">
+                                <img src="./img/object_card/2.jpg" alt="">
+                            </div>
+                            <div class="object_card_gallery__slide_date">13.07.2022</div>
+                            <h4 class="object_card_gallery__slide_title">Мероприятие в честь дня детей длинная строка</h4>
+                        </a>
+                        <a data-src="./img/main/main_objects/6.jpg" data-fancybox="gallery-2" class="object_card_gallery__slide_hide_img">
+                        </a>
+                        <a data-src="./img/main/main_objects/7.jpg" data-fancybox="gallery-2" class="object_card_gallery__slide_hide_img">
+                        </a>
+                    </div>
+                    <div class="object_card_gallery__slider_slide swiper-slide">
+                        <a href="#" class="object_card_gallery__slide_link" data-src="./img/main/main_objects/8.jpg" data-fancybox="gallery-3">
+                            <div class="object_card_gallery__slide_img">
+                                <img src="./img/object_card/3.jpg" alt="">
+                            </div>
+                            <div class="object_card_gallery__slide_date">13.07.2022</div>
+                            <h4 class="object_card_gallery__slide_title">Мероприятие в честь дня детей</h4>
+                        </a>
+                        <a data-src="./img/main/main_objects/9.jpg" data-fancybox="gallery-3" class="object_card_gallery__slide_hide_img">
+                        </a>
+                        <a data-src="./img/main/main_objects/10.jpg" data-fancybox="gallery-3" class="object_card_gallery__slide_hide_img">
+                        </a>
+                    </div>
+                    <div class="object_card_gallery__slider_slide swiper-slide">
+                        <a href="#" data-src="./img/main/main_objects/4.jpg" class="object_card_gallery__slide_link" data-fancybox="gallery-4">
+                            <div class="object_card_gallery__slide_img">
+                                <img src="./img/object_card/1.jpg" alt="">
+                            </div>
+                            <div class="object_card_gallery__slide_date">13.07.2022</div>
+                            <h4 class="object_card_gallery__slide_title">Мероприятие в честь дня детей</h4>
+                        </a>
+                        <a data-src="./img/main/main_objects/1.jpg" data-fancybox="gallery-4" class="object_card_gallery__slide_hide_img">
+                        </a>
+                        <a data-src="./img/main/main_objects/2.jpg" data-fancybox="gallery-4" class="object_card_gallery__slide_hide_img">
+                        </a>
+                        <a data-src="./img/main/main_objects/3.jpg" data-fancybox="gallery-4" class="object_card_gallery__slide_hide_img">
+                        </a>
+                    </div>
+                    <div class="object_card_gallery__slider_slide swiper-slide">
+                        <a href="#" data-src="./img/main/main_objects/4.jpg" class="object_card_gallery__slide_link" data-fancybox="gallery-5">
+                            <div class="object_card_gallery__slide_img">
+                                <img src="./img/object_card/1.jpg" alt="">
+                            </div>
+                            <div class="object_card_gallery__slide_date">13.07.2022</div>
+                            <h4 class="object_card_gallery__slide_title">Мероприятие в честь дня детей</h4>
+                        </a>
+                        <a data-src="./img/main/main_objects/1.jpg" data-fancybox="gallery-5" class="object_card_gallery__slide_hide_img">
+                        </a>
+                        <a data-src="./img/main/main_objects/2.jpg" data-fancybox="gallery-5" class="object_card_gallery__slide_hide_img">
+                        </a>
+                        <a data-src="./img/main/main_objects/3.jpg" data-fancybox="gallery-5" class="object_card_gallery__slide_hide_img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="object_card_info section js-anim-block hide">
+    <div class="container">
+        <div class="object_card_info__content">
+            <h2 class="object_card_info__title this--wave">Информация по домам</h2>
+            <div class="object_card_info__tabs js_tabs">
+                <div class="object_card_info__tabs_block js-anim-block hide">
+                    <h3 class="object_card_info__tabs_title">ул. Верная</h3>
+                    <div class="object_card_info__tabs_top">
+                        <a href="#" class="object_card_info__tabs_link tab__link js_tab_link" data-id="1">дом 1 к 1</a>
+                        <a href="#" class="object_card_info__tabs_link tab__link js_tab_link" data-id="2">дом 1 к 2</a>
+                        <a href="#" class="object_card_info__tabs_link tab__link js_tab_link" data-id="3">дом 3 к 1</a>
+                        <a href="#" class="object_card_info__tabs_link tab__link js_tab_link" data-id="4">дом 3 к 2</a>
+                        <a href="#" class="object_card_info__tabs_link tab__link js_tab_link" data-id="5">дом 3 к 3</a>
+                        <a href="#" class="object_card_info__tabs_link tab__link js_tab_link" data-id="6">дом 3 к 4</a>
+                        <a href="#" class="object_card_info__tabs_link tab__link js_tab_link" data-id="7">дом 4 к 1</a>
+                        <a href="#" class="object_card_info__tabs_link tab__link js_tab_link" data-id="8">дом 4 к 2</a>
+                        <a href="#" class="object_card_info__tabs_link tab__link js_tab_link" data-id="9">дом 4 к 3</a>
+                        <a href="#" class="object_card_info__tabs_link tab__link js_tab_link" data-id="10">дом 5 к 1</a>
+                        <a href="#" class="object_card_info__tabs_link tab__link js_tab_link" data-id="11">дом 5 к 2</a>
+                    </div>
+                    <div class="object_card_info__tabs_bottom">
+                        <div class="object_card_info__tabs_body tab__body js_tab_body" data-id="1">
+                            <div class="tab__body_mob_close"></div>
+                            <h3 class="tab__body_title">ул. Верная, дом 1 к 1</h3>
+                            <div class="tab__body_items">
+                                <div class="tab__body_item">
+                                    <span>Год постройки</span>
+                                    <span>2017</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Этажность</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Квартир</span>
+                                    <span>102</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Общая площадь</span>
+                                    <span>6570,80 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Жилая площадь</span>
+                                    <span>4613,40 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Кадастровый номер</span>
+                                    <span>47:08:0103001:3561</span>
+                                </div>
+                            </div>
+                            <div class="tab__body_documents documents">
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="object_card_info__tabs_body tab__body js_tab_body" data-id="2">
+                            <div class="tab__body_mob_close"></div>
+                            <h3 class="tab__body_title">ул. Верная, дом 1 к 2</h3>
+                            <div class="tab__body_items">
+                                <div class="tab__body_item">
+                                    <span>Год постройки</span>
+                                    <span>2017</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Этажность</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Квартир</span>
+                                    <span>102</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Общая площадь</span>
+                                    <span>6570,80 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Жилая площадь</span>
+                                    <span>4613,40 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Кадастровый номер</span>
+                                    <span>47:08:0103001:3561</span>
+                                </div>
+                            </div>
+                            <div class="tab__body_documents documents">
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="object_card_info__tabs_body tab__body js_tab_body" data-id="3">
+                            <div class="tab__body_mob_close"></div>
+                            <h3 class="tab__body_title">ул. Верная, дом 3 к 1</h3>
+                            <div class="tab__body_items">
+                                <div class="tab__body_item">
+                                    <span>Год постройки</span>
+                                    <span>2017</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Этажность</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Квартир</span>
+                                    <span>102</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Общая площадь</span>
+                                    <span>6570,80 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Жилая площадь</span>
+                                    <span>4613,40 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Кадастровый номер</span>
+                                    <span>47:08:0103001:3561</span>
+                                </div>
+                            </div>
+                            <div class="tab__body_documents documents">
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="object_card_info__tabs_body tab__body js_tab_body" data-id="4">
+                            <div class="tab__body_mob_close"></div>
+                            <h3 class="tab__body_title">ул. Верная, дом 3 к 2</h3>
+                            <div class="tab__body_items">
+                                <div class="tab__body_item">
+                                    <span>Год постройки</span>
+                                    <span>2017</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Этажность</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Квартир</span>
+                                    <span>102</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Общая площадь</span>
+                                    <span>6570,80 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Жилая площадь</span>
+                                    <span>4613,40 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Кадастровый номер</span>
+                                    <span>47:08:0103001:3561</span>
+                                </div>
+                            </div>
+                            <div class="tab__body_documents documents">
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="object_card_info__tabs_body tab__body js_tab_body" data-id="5">
+                            <div class="tab__body_mob_close"></div>
+                            <h3 class="tab__body_title">ул. Верная, дом 3 к 3</h3>
+                            <div class="tab__body_items">
+                                <div class="tab__body_item">
+                                    <span>Год постройки</span>
+                                    <span>2017</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Этажность</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Квартир</span>
+                                    <span>102</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Общая площадь</span>
+                                    <span>6570,80 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Жилая площадь</span>
+                                    <span>4613,40 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Кадастровый номер</span>
+                                    <span>47:08:0103001:3561</span>
+                                </div>
+                            </div>
+                            <div class="tab__body_documents documents">
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="object_card_info__tabs_body tab__body js_tab_body" data-id="6">
+                            <div class="tab__body_mob_close"></div>
+                            <h3 class="tab__body_title">ул. Верная, дом 3 к 4</h3>
+                            <div class="tab__body_items">
+                                <div class="tab__body_item">
+                                    <span>Год постройки</span>
+                                    <span>2017</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Этажность</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Квартир</span>
+                                    <span>102</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Общая площадь</span>
+                                    <span>6570,80 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Жилая площадь</span>
+                                    <span>4613,40 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Кадастровый номер</span>
+                                    <span>47:08:0103001:3561</span>
+                                </div>
+                            </div>
+                            <div class="tab__body_documents documents">
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="object_card_info__tabs_body tab__body js_tab_body" data-id="7">
+                            <div class="tab__body_mob_close"></div>
+                            <h3 class="tab__body_title">ул. Верная, дом 4 к 1</h3>
+                            <div class="tab__body_items">
+                                <div class="tab__body_item">
+                                    <span>Год постройки</span>
+                                    <span>2017</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Этажность</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Квартир</span>
+                                    <span>102</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Общая площадь</span>
+                                    <span>6570,80 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Жилая площадь</span>
+                                    <span>4613,40 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Кадастровый номер</span>
+                                    <span>47:08:0103001:3561</span>
+                                </div>
+                            </div>
+                            <div class="tab__body_documents documents">
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="object_card_info__tabs_body tab__body js_tab_body" data-id="8">
+                            <div class="tab__body_mob_close"></div>
+                            <h3 class="tab__body_title">ул. Верная, дом 4 к 2</h3>
+                            <div class="tab__body_items">
+                                <div class="tab__body_item">
+                                    <span>Год постройки</span>
+                                    <span>2017</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Этажность</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Квартир</span>
+                                    <span>102</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Общая площадь</span>
+                                    <span>6570,80 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Жилая площадь</span>
+                                    <span>4613,40 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Кадастровый номер</span>
+                                    <span>47:08:0103001:3561</span>
+                                </div>
+                            </div>
+                            <div class="tab__body_documents documents">
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="object_card_info__tabs_body tab__body js_tab_body" data-id="9">
+                            <div class="tab__body_mob_close"></div>
+                            <h3 class="tab__body_title">ул. Верная, дом 4 к 3</h3>
+                            <div class="tab__body_items">
+                                <div class="tab__body_item">
+                                    <span>Год постройки</span>
+                                    <span>2017</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Этажность</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Квартир</span>
+                                    <span>102</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Общая площадь</span>
+                                    <span>6570,80 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Жилая площадь</span>
+                                    <span>4613,40 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Кадастровый номер</span>
+                                    <span>47:08:0103001:3561</span>
+                                </div>
+                            </div>
+                            <div class="tab__body_documents documents">
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="object_card_info__tabs_body tab__body js_tab_body" data-id="10">
+                            <div class="tab__body_mob_close"></div>
+                            <h3 class="tab__body_title">ул. Верная, дом 5 к 1</h3>
+                            <div class="tab__body_items">
+                                <div class="tab__body_item">
+                                    <span>Год постройки</span>
+                                    <span>2017</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Этажность</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Квартир</span>
+                                    <span>102</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Общая площадь</span>
+                                    <span>6570,80 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Жилая площадь</span>
+                                    <span>4613,40 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Кадастровый номер</span>
+                                    <span>47:08:0103001:3561</span>
+                                </div>
+                            </div>
+                            <div class="tab__body_documents documents">
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="object_card_info__tabs_body tab__body js_tab_body" data-id="11">
+                            <div class="tab__body_mob_close"></div>
+                            <h3 class="tab__body_title">ул. Верная, дом 5 к 2</h3>
+                            <div class="tab__body_items">
+                                <div class="tab__body_item">
+                                    <span>Год постройки</span>
+                                    <span>2017</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Этажность</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Квартир</span>
+                                    <span>102</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Общая площадь</span>
+                                    <span>6570,80 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Жилая площадь</span>
+                                    <span>4613,40 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Кадастровый номер</span>
+                                    <span>47:08:0103001:3561</span>
+                                </div>
+                            </div>
+                            <div class="tab__body_documents documents">
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="object_card_info__tabs_block js-anim-block hide">
+                    <h3 class="object_card_info__tabs_title">ул. Любимая</h3>
+                    <div class="object_card_info__tabs_top">
+                        <a href="#" class="object_card_info__tabs_link tab__link js_tab_link" data-id="12">дом 3</a>
+                        <a href="#" class="object_card_info__tabs_link tab__link js_tab_link" data-id="13">дом 5</a>
+                    </div>
+                    <div class="object_card_info__tabs_bottom">
+                        <div class="object_card_info__tabs_body tab__body js_tab_body" data-id="12">
+                            <div class="tab__body_mob_close"></div>
+                            <h3 class="tab__body_title">ул. Любимая, дом 3</h3>
+                            <div class="tab__body_items">
+                                <div class="tab__body_item">
+                                    <span>Год постройки</span>
+                                    <span>2017</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Этажность</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Квартир</span>
+                                    <span>102</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Общая площадь</span>
+                                    <span>6570,80 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Жилая площадь</span>
+                                    <span>4613,40 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Кадастровый номер</span>
+                                    <span>47:08:0103001:3561</span>
+                                </div>
+                            </div>
+                            <div class="tab__body_documents documents">
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="object_card_info__tabs_body tab__body js_tab_body" data-id="13">
+                            <div class="tab__body_mob_close"></div>
+                            <h3 class="tab__body_title">ул. Любимая, дом 5</h3>
+                            <div class="tab__body_items">
+                                <div class="tab__body_item">
+                                    <span>Год постройки</span>
+                                    <span>2017</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Этажность</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Квартир</span>
+                                    <span>102</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Общая площадь</span>
+                                    <span>6570,80 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Жилая площадь</span>
+                                    <span>4613,40 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Кадастровый номер</span>
+                                    <span>47:08:0103001:3561</span>
+                                </div>
+                            </div>
+                            <div class="tab__body_documents documents">
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="object_card_info__tabs_block js-anim-block hide">
+                    <h3 class="object_card_info__tabs_title">ул. Златоглавая</h3>
+                    <div class="object_card_info__tabs_top">
+                        <a href="#" class="object_card_info__tabs_link tab__link js_tab_link" data-id="14">дом 3 к 1</a>
+                        <a href="#" class="object_card_info__tabs_link tab__link js_tab_link" data-id="15">дом 3 к 2</a>
+                        <a href="#" class="object_card_info__tabs_link tab__link js_tab_link" data-id="16">дом 5 к 1</a>
+                        <a href="#" class="object_card_info__tabs_link tab__link js_tab_link" data-id="17">дом 5 к 2</a>
+                    </div>
+                    <div class="object_card_info__tabs_bottom">
+                        <div class="object_card_info__tabs_body tab__body js_tab_body" data-id="14">
+                            <div class="tab__body_mob_close"></div>
+                            <h3 class="tab__body_title">ул. Златоглавая, дом 3 к 1</h3>
+                            <div class="tab__body_items">
+                                <div class="tab__body_item">
+                                    <span>Год постройки</span>
+                                    <span>2017</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Этажность</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Квартир</span>
+                                    <span>102</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Общая площадь</span>
+                                    <span>6570,80 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Жилая площадь</span>
+                                    <span>4613,40 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Кадастровый номер</span>
+                                    <span>47:08:0103001:3561</span>
+                                </div>
+                            </div>
+                            <div class="tab__body_documents documents">
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="object_card_info__tabs_body tab__body js_tab_body" data-id="15">
+                            <div class="tab__body_mob_close"></div>
+                            <h3 class="tab__body_title">ул. Златоглавая, дом 3 к 2</h3>
+                            <div class="tab__body_items">
+                                <div class="tab__body_item">
+                                    <span>Год постройки</span>
+                                    <span>2017</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Этажность</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Квартир</span>
+                                    <span>102</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Общая площадь</span>
+                                    <span>6570,80 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Жилая площадь</span>
+                                    <span>4613,40 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Кадастровый номер</span>
+                                    <span>47:08:0103001:3561</span>
+                                </div>
+                            </div>
+                            <div class="tab__body_documents documents">
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="object_card_info__tabs_body tab__body js_tab_body" data-id="16">
+                            <div class="tab__body_mob_close"></div>
+                            <h3 class="tab__body_title">ул. Златоглавая, дом 5 к 1</h3>
+                            <div class="tab__body_items">
+                                <div class="tab__body_item">
+                                    <span>Год постройки</span>
+                                    <span>2017</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Этажность</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Квартир</span>
+                                    <span>102</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Общая площадь</span>
+                                    <span>6570,80 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Жилая площадь</span>
+                                    <span>4613,40 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Кадастровый номер</span>
+                                    <span>47:08:0103001:3561</span>
+                                </div>
+                            </div>
+                            <div class="tab__body_documents documents">
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="object_card_info__tabs_body tab__body js_tab_body" data-id="17">
+                            <div class="tab__body_mob_close"></div>
+                            <h3 class="tab__body_title">ул. Златоглавая, дом 5 к 2</h3>
+                            <div class="tab__body_items">
+                                <div class="tab__body_item">
+                                    <span>Год постройки</span>
+                                    <span>2017</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Этажность</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Квартир</span>
+                                    <span>102</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Общая площадь</span>
+                                    <span>6570,80 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Жилая площадь</span>
+                                    <span>4613,40 м2</span>
+                                </div>
+                                <div class="tab__body_item">
+                                    <span>Кадастровый номер</span>
+                                    <span>47:08:0103001:3561</span>
+                                </div>
+                            </div>
+                            <div class="tab__body_documents documents">
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="documents__document">
+                                    <div class="documents__document_title">Протокол ОСС от 10.02.2018 с договором управления</div>
+                                    <div class="documents__bottom">
+                                        <span>PDF</span>
+                                        <span>12.2 Мб</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
     <footer class="footer">
     <div class="footer__content">
@@ -153,7 +1198,7 @@
 </footer>
 </div>
 
-<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/fancybox.umd.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>

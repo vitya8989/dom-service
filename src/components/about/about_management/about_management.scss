@@ -1,0 +1,68 @@
+.about_management {
+  background: #F8FBFC;
+}
+.about_management__content {
+  @media ($tablet) {
+    padding-bottom: 20px;
+  }
+}
+.about_management__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -40px;
+  margin-top: 44px;
+  @media ($tablet) {
+    margin-top: 20px;
+    margin-bottom: -20px;
+  }
+  @media ($mobile) {
+    margin-left: 0;
+  }
+}
+.about_management__item {
+  margin-bottom: 40px;
+  margin-left: 30px;
+  padding-left: 60px;
+  width: calc(33.333% - 30px);
+  @media ($tablet) {
+    margin-bottom: 20px;
+    width: calc(50% - 30px);
+  }
+  @media ($tablet3) {
+    min-height: 50px;
+    padding-top: 3px;
+  }
+  @media ($mobile) {
+    width: 100%;
+    margin-left: 0;
+  }
+  span {
+    display: block;
+
+    &:first-child {
+      color: #8D8D8D;
+    }
+    &:last-child {
+      font-size: 2.2rem;
+      line-height: 1.64;
+      @media ($tablet3) {
+        font-size: 1.6rem;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  &.this--woman {
+    background: url('../img/icons/woman.png') 0 8px / 50px 50px no-repeat;
+    @media ($tablet3) {
+      background-position: 0 0;
+    }
+  }
+  &.this--man {
+    background: url('../img/icons/man.png') 0 8px / 50px 50px no-repeat;
+    @media ($tablet3) {
+      background-position: 0 0;
+    }
+  }
+}

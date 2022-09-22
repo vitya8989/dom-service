@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>О компании</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
+
+<body>
+<div class="wrapper">
+    @@include('components/header/header.html')
+    <main class="main">
+        @@include('components/preloader/preloader.html')
+        @@include('components/about/about_top/about_top.html')
+        @@include('components/about/about_slider/about_slider.html')
+        @@include('components/about/about_management/about_management.html')
+        @@include('components/about/about_history/about_history.html')
+    </main>
+    @@include('components/footer/footer.html')
+</div>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
