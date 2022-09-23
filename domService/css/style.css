@@ -2823,6 +2823,7 @@ h4 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+  min-height: 750px;
 }
 
 .page_404__content {
@@ -4891,6 +4892,10 @@ h4 {
 
   .about_history__item.this--empty {
     display: none;
+  }
+
+  .page_404 {
+    min-height: 0;
   }
 
   .page_404__content {

@@ -2,6 +2,10 @@
   position: relative;
   background: url('../img/page_404/page_404_bg.jpg') center / cover no-repeat;
   flex: 1 0 auto;
+  min-height: 750px;
+  @media ($mobile) {
+    min-height: 0;
+  }
   .dots {
     @media ($desktopSuperBigMax) {
       top: 130px;
