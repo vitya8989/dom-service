@@ -5,7 +5,21 @@
       top: 130px;
     }
   }
-
+  h1,
+  h2,
+  ol,
+  ul {
+    margin-bottom: 40px;
+    @media ($tablet) {
+      margin-bottom: 20px;
+    }
+  }
+  h3 {
+    margin-bottom: 20px;
+    @media ($tablet) {
+      margin-bottom: 10px;
+    }
+  }
   p {
     margin-bottom: 25px;
     @media ($tablet3) {
@@ -258,6 +272,13 @@
 }
 .default_page__review {
   display: flex;
+
+  h4 {
+    margin-top: 15px;
+    @media ($tablet3) {
+      margin-top: 10px;
+    }
+  }
   @media ($mobile) {
    display: block;
   }
@@ -298,12 +319,6 @@
     @media ($tablet3) {
       margin-bottom: 0;
     }
-  }
-}
-.default_page__review_title {
-  margin-top: 15px;
-  @media ($tablet3) {
-    margin-top: 10px;
   }
 }
 .default_page__review_subtitle {

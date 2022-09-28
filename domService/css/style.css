@@ -1420,7 +1420,7 @@ h4 {
   margin-right: 30px;
 }
 
-.main_services__item_text {
+.main_services__item_info p {
   margin-top: 10px;
   color: #8D8D8D;
 }
@@ -1477,7 +1477,20 @@ h4 {
   display: block;
 }
 
-.main_news__item:active .main_news__item_title {
+.main_news__item h3 {
+  margin-top: 5px;
+  color: #383838;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main_news__item p {
+  color: #8D8D8D;
+  margin-top: 5px;
+}
+
+.main_news__item:active h3 {
   color: #225C69 !important;
 }
 
@@ -1507,19 +1520,6 @@ h4 {
 .main_news__item_date {
   color: #327C8C;
   margin-top: 20px;
-}
-
-.main_news__item_title {
-  margin-top: 5px;
-  color: #383838;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.main_news__item_text {
-  color: #8D8D8D;
-  margin-top: 5px;
 }
 
 .main_objects {
@@ -2086,6 +2086,17 @@ h4 {
   position: relative;
 }
 
+.default_page h1,
+.default_page h2,
+.default_page ol,
+.default_page ul {
+  margin-bottom: 40px;
+}
+
+.default_page h3 {
+  margin-bottom: 20px;
+}
+
 .default_page p {
   margin-bottom: 25px;
 }
@@ -2304,6 +2315,10 @@ h4 {
   display: flex;
 }
 
+.default_page__review h4 {
+  margin-top: 15px;
+}
+
 .default_page__review_img {
   width: 170px;
   -webkit-box-flex: 0;
@@ -2331,10 +2346,6 @@ h4 {
 
 .default_page__review_text p {
   margin-bottom: 0;
-}
-
-.default_page__review_title {
-  margin-top: 15px;
 }
 
 .default_page__review_subtitle {
@@ -3092,7 +3103,7 @@ h4 {
             transform: scale(1.04);
   }
 
-  .main_news__item:hover .main_news__item_title {
+  .main_news__item:hover h3 {
     color: #327C8C;
   }
 
@@ -3874,7 +3885,7 @@ h4 {
     min-height: 0;
   }
 
-  .main_services__item_text {
+  .main_services__item_info p {
     display: none;
   }
 
@@ -4158,6 +4169,17 @@ h4 {
 
   .news_card_photo__btn {
     margin-top: 20px;
+  }
+
+  .default_page h1,
+  .default_page h2,
+  .default_page ol,
+  .default_page ul {
+    margin-bottom: 20px;
+  }
+
+  .default_page h3 {
+    margin-bottom: 10px;
   }
 
   .default_page ul,
@@ -4565,12 +4587,12 @@ h4 {
     line-height: 1.43;
   }
 
-  .default_page__review_text p {
-    margin-bottom: 0;
+  .default_page__review h4 {
+    margin-top: 10px;
   }
 
-  .default_page__review_title {
-    margin-top: 10px;
+  .default_page__review_text p {
+    margin-bottom: 0;
   }
 
   .default_page__review_subtitle {

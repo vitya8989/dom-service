@@ -43,11 +43,13 @@
     height: 40px;
   }
 }
-.main_services__item_text {
-  margin-top: 10px;
-  color: #8D8D8D;
-  @media ($tablet) {
-    display: none;
+.main_services__item_info {
+  p {
+    margin-top: 10px;
+    color: #8D8D8D;
+    @media ($tablet) {
+      display: none;
+    }
   }
 }
 
