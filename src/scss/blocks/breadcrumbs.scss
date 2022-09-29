@@ -2,6 +2,20 @@
   overflow-x: auto;
   max-width: 100%;
   margin-bottom: 20px;
+
+  &.this--wh {
+    .breadcrumb.this--link {
+      color: #FFFFFF;
+      opacity: 1;
+      &::after {
+        background: #FFFFFF;
+      }
+    }
+    .breadcrumb {
+      color: #BFDFE7;
+      opacity: 0.3;
+    }
+  }
 }
 .breadcrumbs_wr {
   display: flex;

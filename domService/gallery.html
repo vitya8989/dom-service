@@ -67,18 +67,21 @@
     <main class="main">
         <div class="preloader">
 </div>
-        <section class="gallery section this--dots">
+        <section class="main_top section this--top this--dots">
     <div class="dots"></div>
     <div class="container">
-        <div class="gallery__content">
-            <div class="gallery__breadcrumbs breadcrumbs">
-                <div class="breadcrumbs_wr">
-                    <a href="/" class="breadcrumb this--link">Главная</a>
-                    <div class="breadcrumb">Галерея</div>
-                </div>
+        <div class="breadcrumbs">
+            <div class="breadcrumbs_wr">
+                <a href="/" class="breadcrumb this--link">Главная</a>
+                <div class="breadcrumb">Галерея</div>
             </div>
-
-            <h1 class="gallery__title">Галерея</h1>
+        </div>
+        <h1>Галерея</h1>
+    </div>
+</section>
+<section class="gallery section this--bottom">
+    <div class="container">
+        <div class="gallery__content">
             <div class="gallery__items js-anim-block hide">
                 <div class="gallery__item">
                     <div class="gallery__item_img">
@@ -170,12 +173,14 @@
                 <a href="#" class="pagination__btn btn this--transparent this--svg this--arrow">дальше
                     <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 0.306945L15 27.693M15 27.693L29 13.7671M15 27.693L0.999999 13.7671" stroke="#327C8C"/>
-                    </svg></a>
+                    </svg>
+                </a>
                 <ul class="pagination__items">
                     <li class="pagination__item">
                         <a href="#" class="pagination__arrow pagination__prev this--disabled">
                             <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.614257 15L28.0003 15M28.0003 15L14.0744 29M28.0003 15L14.0744 0.999999" stroke="#327C8C"/>
+                                <path d="M0.614257 15L28.0003 15M28.0003 15L14.0744 29M28.0003 15L14.0744 0.999999"
+                                      stroke="#327C8C"/>
                             </svg>
                         </a>
                     </li>
@@ -197,7 +202,8 @@
                     <li class="pagination__item">
                         <a href="#" class="pagination__arrow pagination__next">
                             <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.614257 15L28.0003 15M28.0003 15L14.0744 29M28.0003 15L14.0744 0.999999" stroke="#327C8C"/>
+                                <path d="M0.614257 15L28.0003 15M28.0003 15L14.0744 29M28.0003 15L14.0744 0.999999"
+                                      stroke="#327C8C"/>
                             </svg>
                         </a>
                     </li>

@@ -1,8 +1,5 @@
-.services {
-  position: relative;
-  .dots {
-    @media ($desktopSuperBigMax) {
-      top: 130px;
-    }
+.services__content {
+  @media ($tablet) {
+    padding-bottom: 20px;
   }
 }
