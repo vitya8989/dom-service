@@ -98,6 +98,45 @@ img {
   font-style: normal;
 }
 
+.preloader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  background: #ffffff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.preloader.this--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.preloader picture {
+  width: 100%;
+  height: 100%;
+}
+
+.preloader img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 html {
   font-size: 10px;
 }
@@ -841,33 +880,6 @@ h4 {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-}
-
-.preloader {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 10000;
-  background: url("../img/preloader/preloader.jpg") center/cover no-repeat, #ffffff;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.preloader.this--hidden {
-  opacity: 0;
-  visibility: hidden;
 }
 
 .header {
@@ -3541,10 +3553,6 @@ h4 {
     margin-top: 20px;
   }
 
-  .preloader {
-    background: url("../img/preloader/preloader1024.jpg") center/cover no-repeat, #ffffff;
-  }
-
   .header__content {
     min-height: 70px;
     -webkit-box-pack: justify;
@@ -4953,8 +4961,6 @@ h4 {
 
 .webp .dots.this--wh{ background: url(../img/icons/dots_wh.webp) center/contain no-repeat; }
 
-.webp .preloader{ background: url(../img/preloader/preloader.webp) center/cover no-repeat, #ffffff; }
-
 .webp .footer{ background: url(../img/footer/footer_bg.webp) left/cover no-repeat; }
 
 .webp .main_top.this--main{ background: url(../img/main/main_top/main_top_bg.webp) center/cover no-repeat; }
@@ -4985,11 +4991,6 @@ h4 {
 @media (max-width: 1699.9px){
 
   .webp .dots.this--wh{ background: url(../img/icons/dots_small_wh.webp) center/contain no-repeat; }
-}
-
-@media (max-width: 1023.9px){
-
-  .webp .preloader{ background: url(../img/preloader/preloader1024.webp) center/cover no-repeat, #ffffff; }
 }
 
 @media (max-width: 767.9px){

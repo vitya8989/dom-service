@@ -12,7 +12,7 @@
 }
 
 @import "fonts";
-
+@import "../components/preloader/preloader";
 html {
 	font-size: 10px;
 }
@@ -135,8 +135,6 @@ body {
 @import "./blocks/documents";
 @import "./blocks/pagination";
 
-
-@import "../components/preloader/preloader";
 @import "../components/header/header";
 @import "../components/footer/footer";
 @import "../components/main/main_top/main_top";

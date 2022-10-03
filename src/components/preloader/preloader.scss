@@ -5,18 +5,23 @@
   left: 0;
   top: 0;
   z-index: 10000;
-  background: url('../img/preloader/preloader.jpg') center/cover no-repeat, #ffffff;
+  background: #ffffff;
   transition: 0.5s;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  @media ($tablet) {
-    background: url('../img/preloader/preloader1024.jpg') center/cover no-repeat, #ffffff;
-  }
-
   &.this--hidden {
     opacity: 0;
     visibility: hidden;
+  }
+  picture {
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
