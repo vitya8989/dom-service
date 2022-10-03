@@ -137,11 +137,11 @@
   }
 }
 .main_contacts__content_right {
-  width: calc(50% - 50px);
+  width: calc(50% - 51px);
   margin-left: 50px;
 
   @media ($desktop) {
-    width: calc(50% - 20px);
+    width: calc(50% - 21px);
     margin-left: 20px;
   }
   @media ($tablet) {

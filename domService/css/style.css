@@ -850,7 +850,7 @@ h4 {
   left: 0;
   top: 0;
   z-index: 10000;
-  background: url("../img/preloader/preloader.jpg") center/cover no-repeat;
+  background: url("../img/preloader/preloader.jpg") center/cover no-repeat, #ffffff;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -1442,7 +1442,7 @@ h4 {
 
 .main_links__right {
   width: 50%;
-  background: url("/img/main/main_links/main_links_bg.jpg") center/cover no-repeat;
+  background: url("../img/main/main_links/main_links_bg.jpg") center/cover no-repeat;
   padding: 55px 50px 56px;
 }
 
@@ -1826,7 +1826,7 @@ h4 {
 }
 
 .main_contacts__content_right {
-  width: calc(50% - 50px);
+  width: calc(50% - 51px);
   margin-left: 50px;
 }
 
@@ -3330,7 +3330,7 @@ h4 {
   }
 
   .main_contacts__content_right {
-    width: calc(50% - 20px);
+    width: calc(50% - 21px);
     margin-left: 20px;
   }
 
@@ -3542,7 +3542,7 @@ h4 {
   }
 
   .preloader {
-    background: url("../img/preloader/preloader1024.jpg") center/cover no-repeat;
+    background: url("../img/preloader/preloader1024.jpg") center/cover no-repeat, #ffffff;
   }
 
   .header__content {
@@ -4953,7 +4953,7 @@ h4 {
 
 .webp .dots.this--wh{ background: url(../img/icons/dots_wh.webp) center/contain no-repeat; }
 
-.webp .preloader{ background: url(../img/preloader/preloader.webp) center/cover no-repeat; }
+.webp .preloader{ background: url(../img/preloader/preloader.webp) center/cover no-repeat, #ffffff; }
 
 .webp .footer{ background: url(../img/footer/footer_bg.webp) left/cover no-repeat; }
 
@@ -4965,7 +4965,7 @@ h4 {
 
 .webp .main_top.this--services_card{ background: url(../img/services_card/services_card_bg.webp) center/cover no-repeat; }
 
-.webp .main_links__right{ background: url(/img/main/main_links/main_links_bg.webp) center/cover no-repeat; }
+.webp .main_links__right{ background: url(../img/main/main_links/main_links_bg.webp) center/cover no-repeat; }
 
 .webp .contacts__management_item.this--woman{ background: url(../img/icons/woman.webp) 0 8px/50px 50px no-repeat; }
 
@@ -4989,7 +4989,7 @@ h4 {
 
 @media (max-width: 1023.9px){
 
-  .webp .preloader{ background: url(../img/preloader/preloader1024.webp) center/cover no-repeat; }
+  .webp .preloader{ background: url(../img/preloader/preloader1024.webp) center/cover no-repeat, #ffffff; }
 }
 
 @media (max-width: 767.9px){

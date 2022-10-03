@@ -5,14 +5,14 @@
   left: 0;
   top: 0;
   z-index: 10000;
-  background: url('../img/preloader/preloader.jpg') center/cover no-repeat;
+  background: url('../img/preloader/preloader.jpg') center/cover no-repeat, #ffffff;
   transition: 0.5s;
   display: flex;
   align-items: center;
   justify-content: center;
 
   @media ($tablet) {
-    background: url('../img/preloader/preloader1024.jpg') center/cover no-repeat;
+    background: url('../img/preloader/preloader1024.jpg') center/cover no-repeat, #ffffff;
   }
 
   &.this--hidden {
